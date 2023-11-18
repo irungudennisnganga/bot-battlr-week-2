@@ -1,6 +1,7 @@
 import '../components/App.css';
 import BotCollection from './BotCollection';
 import { useState, useEffect } from 'react';
+import YourBotArmy from './YourBotArmy';
 
 
 function App() {
@@ -18,6 +19,7 @@ useEffect( () => {
 //console.log(data)
   return (
     <div className="App">
+     <h1>Bot Collection</h1>
       <BotCollection data={data} />
     </div>
   );

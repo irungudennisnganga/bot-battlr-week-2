@@ -2,8 +2,8 @@ import React from 'react'
 
 function YourBotArmy() {
   return (
-    <div>
-      
+    <div >
+      <h1>HI THERE</h1>
     </div>
   )
 }

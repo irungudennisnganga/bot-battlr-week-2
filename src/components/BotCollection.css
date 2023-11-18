@@ -21,6 +21,7 @@
 
 .card-wrapper {
   padding: 2%;
+  display: flex;
 }
 
 .card-wrapper .card{
