@@ -3,8 +3,8 @@ import React from 'react'
 function Card({bot,onHandleClick}) {
 
   return (
-    <div onClick={ () => onHandleClick(bot)}  className="card-wrapper">
-    <div className="card">
+    
+    <div onClick={ () => onHandleClick(bot)}   className="card">
        <div className="image-wrapper">
      
           <img src={bot.avatar_url} alt='bot' />
@@ -18,10 +18,10 @@ function Card({bot,onHandleClick}) {
                 <p className="text"> Damage : {bot.damage}  </p> 
                 <p className="text"> Class : {bot.bot_class} </p> 
                 <p className="text"> Last update : {bot.updated_at}  </p>  
-            </div>
+             </div>
            </div>
         </div>
-     </div>
+   
   )
 }
 

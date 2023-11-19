@@ -15,13 +15,15 @@ function handleClick(bot){
 //console.log(clickeddata)
   return (
     <div   id='main-card' >
-        <YourBotArmy clickeddata={clickeddata} />
-        <h2>Bot Available</h2>
+        <YourBotArmy onSet={setClickeddata} clickeddata={clickeddata} />
+        <h2>Bot Collection</h2>
+        <div className="card-wrapper">
         {data.map( bot => {
          return (
            <Card key={bot.id} bot={bot} onHandleClick={handleClick}/>
 
         )})}
+      </div>
     </div>
 
 

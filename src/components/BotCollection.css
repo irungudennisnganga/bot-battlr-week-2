@@ -1,16 +1,4 @@
-#main-card{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#card{
-    width: 400px;
-    margin: 10px;
-    border-radius: 8px;
-    background-color: rgb(192, 211, 229);
-    
-}
+
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
 
@@ -21,11 +9,13 @@
 
 .card-wrapper {
   padding: 2%;
-  display: flex;
+  columns: 5;
+
 }
 
 .card-wrapper .card{
-  margin: 0 auto;
+  margin: 4px auto;
+ 
 }
 
 .card {
@@ -36,6 +26,7 @@
   overflow: hidden;
   padding-bottom: 10px;
   box-shadow: 1px 2px 8px rgba(100, 100, 100, 0.1);
+ 
 }
 
 .image-wrapper {
@@ -69,14 +60,6 @@ img:hover {
   line-height: 1;
 }
 
-.heading::after {
-  content: '';
-  display: block;
-  margin-top: 0.5em;
-  width: 30px;
-  height: 5px;
-  background-color: black;
-}
 
 .text {
   font-family: 'Poppins', sans-serif;
@@ -86,22 +69,4 @@ img:hover {
   line-height: 2;
 }
 
-.button {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 5px 10px;
-  
-  font-family: 'Poppins';
-  font-size: 12px;
-  font-weight: 700;
-  color: #8C5450;
-  text-decoration: none;
- 
-}
-
-.button:hover {
-  color: black;
-
-  transition: linear 0.2s;
-}
 

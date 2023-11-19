@@ -1,11 +1,13 @@
 import React from 'react'
 import Card from './Card'
 
-function YourBotArmy({clickeddata}) {
+function YourBotArmy({clickeddata,onSet}) {
   console.log(clickeddata)
  // let newCard =  
   function handleClick(){
     console.log("clicked")
+    onSet('')
+
   }
   return (
     <div >

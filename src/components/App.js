@@ -19,7 +19,7 @@ useEffect( () => {
 //console.log(data)
   return (
     <div className="App">
-     <h1>Bot Collection</h1>
+     <h1>My Bot Army</h1>
       <BotCollection data={data} />
      
     </div>
