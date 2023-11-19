@@ -2,8 +2,14 @@ import React from 'react'
 
 function Card({bot,onHandleClick}) {
 
-  return (
+
+    function handleClick(){
+        console.log("Deleted")
+    }
+
     
+  return (
+  
     <div onClick={ () => onHandleClick(bot)}   className="card">
        <div className="image-wrapper">
      
@@ -17,11 +23,13 @@ function Card({bot,onHandleClick}) {
                 <p className="text"> Health : {bot.health}  </p>
                 <p className="text"> Damage : {bot.damage}  </p> 
                 <p className="text"> Class : {bot.bot_class} </p> 
-                <p className="text"> Last update : {bot.updated_at}  </p>  
+                <p className="text"> Last update : {bot.updated_at}  </p> 
+                
              </div>
            </div>
         </div>
-   
+       
+       
   )
 }
 

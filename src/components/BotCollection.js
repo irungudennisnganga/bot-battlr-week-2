@@ -7,11 +7,11 @@ import Card from './Card'
 function BotCollection({data}) {
 //console.log(data)
 const [clickeddata, setClickeddata]= useState([])
+
 function handleClick(bot){
-   //if (bot ===bot) console.log(bot)
-   //console.log(bot)
    setClickeddata(bot)
 }
+
 //console.log(clickeddata)
   return (
     <div   id='main-card' >

@@ -2,16 +2,14 @@ import React from 'react'
 import Card from './Card'
 
 function YourBotArmy({clickeddata,onSet}) {
-  console.log(clickeddata)
- // let newCard =  
+   //this function is used to reset the card to empty
   function handleClick(){
-    console.log("clicked")
-    onSet('')
+    onSet([])
 
   }
   return (
     <div >
-   <Card onHandleClick={handleClick}  bot={clickeddata} />
+    {clickeddata =='' ? <p>No Bot selected</p> : <Card onHandleClick={handleClick}  bot={clickeddata} />} 
   
     
     </div>
