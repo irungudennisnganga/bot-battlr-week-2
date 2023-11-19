@@ -21,6 +21,7 @@ useEffect( () => {
     <div className="App">
      <h1>Bot Collection</h1>
       <BotCollection data={data} />
+     
     </div>
   );
 }

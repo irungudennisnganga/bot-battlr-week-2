@@ -1,9 +1,17 @@
 import React from 'react'
+import Card from './Card'
 
-function YourBotArmy() {
+function YourBotArmy({clickeddata}) {
+  console.log(clickeddata)
+ // let newCard =  
+  function handleClick(){
+    console.log("clicked")
+  }
   return (
     <div >
-      <h1>HI THERE</h1>
+   <Card onHandleClick={handleClick}  bot={clickeddata} />
+  
+    
     </div>
   )
 }

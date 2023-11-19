@@ -1,8 +1,9 @@
 import React from 'react'
 
-function Card({bot}) {
+function Card({bot,onHandleClick}) {
+
   return (
-    <div  className="card-wrapper">
+    <div onClick={ () => onHandleClick(bot)}  className="card-wrapper">
     <div className="card">
        <div className="image-wrapper">
      
