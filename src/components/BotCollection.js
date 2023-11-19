@@ -4,7 +4,7 @@ import YourBotArmy from './YourBotArmy'
 import Card from './Card'
 
 
-function BotCollection({data,handleDelete}) {
+function BotCollection({data,handleDelete,onSetData}) {
 //console.log(data)
 const [clickeddata, setClickeddata]= useState([])
 
@@ -25,7 +25,7 @@ function handleClick(bot){
 //console.log(clickeddata)
   return (
     <div   id='main-card' >
-        <YourBotArmy  onHandleDelete={handleClick}   clickeddata={clickeddata} />
+        <YourBotArmy onSet={setClickeddata} onHandleDelete={handleClick}   clickeddata={clickeddata} />
         <h2>Bot Collection</h2>
         <div className="card-wrapper">
         {data.map( bot => {
