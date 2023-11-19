@@ -3,9 +3,9 @@ import React from 'react'
 function Card({bot,onHandleClick}) {
 
 
-    function handleClick(){
-        console.log("Deleted")
-    }
+    // function handleClick(){
+    //     console.log("Deleted")
+    // }
 
     
   return (

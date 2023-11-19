@@ -9,7 +9,10 @@ function BotCollection({data}) {
 const [clickeddata, setClickeddata]= useState([])
 
 function handleClick(bot){
-   setClickeddata([...clickeddata,bot])
+   // let newMap=clickeddata.map(d => (d))
+  //if (bot !==d) 
+  setClickeddata([...clickeddata,bot])
+   
 }
 
 //console.log(clickeddata)

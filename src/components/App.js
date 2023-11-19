@@ -1,7 +1,7 @@
 import '../components/App.css';
 import BotCollection from './BotCollection';
 import { useState, useEffect } from 'react';
-import YourBotArmy from './YourBotArmy';
+
 
 
 function App() {
