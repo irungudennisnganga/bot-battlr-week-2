@@ -9,7 +9,7 @@ function BotCollection({data}) {
 const [clickeddata, setClickeddata]= useState([])
 
 function handleClick(bot){
-   setClickeddata(bot)
+   setClickeddata([...clickeddata,bot])
 }
 
 //console.log(clickeddata)
