@@ -1,16 +1,14 @@
 import React from 'react'
 
-function Card({bot,onHandleClick}) {
+function Card({bot,onHandleClick,onHandleDelete}) {
 
-
-    // function handleClick(){
-    //     console.log("Deleted")
-    // }
+    
 
     
   return (
   
-    <div onClick={ () => onHandleClick(bot)}   className="card">
+    <div>
+        <div  onClick={ () => onHandleClick(bot)}   className="card">
        <div className="image-wrapper">
      
           <img src={bot.avatar_url} alt='bot' />
@@ -27,7 +25,11 @@ function Card({bot,onHandleClick}) {
                 
              </div>
            </div>
+           <button onClick={ () =>  onHandleDelete(bot)}>X</button>
+           </div>
+          
         </div>
+        
        
        
   )

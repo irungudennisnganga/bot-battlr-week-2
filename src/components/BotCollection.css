@@ -12,6 +12,13 @@
   columns: 5;
 
 }
+button{
+  background-color: red;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+}
 
 .card-wrapper .card{
   margin: 4px auto;

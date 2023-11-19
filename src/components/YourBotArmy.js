@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 
-function YourBotArmy({clickeddata,onSet}) {
+function YourBotArmy({clickeddata,onSet,onHandleDelete}) {
    //this function is used to reset the card to empty
    //console.log(clickeddata)
   function handleDelete(data){
@@ -11,7 +11,7 @@ function YourBotArmy({clickeddata,onSet}) {
     onSet(filterd)
 
   }
-  let mapedOver = clickeddata.map(data =>  <Card key={data.id} onHandleClick={ () => handleDelete(data)}  bot={data} />)
+  let mapedOver = clickeddata.map(data =>  <Card onHandleDelete={onHandleDelete}  key={data.id} onHandleClick={ () => handleDelete(data)}  bot={data} />)
 
 
   return (
