@@ -16,8 +16,8 @@ function Card({bot,onHandleClick,onHandleDelete}) {
          </div>
            <div className="text-box-wrapper">
               <div className="text-box">
-                <h3 className="heading"> {bot.name}  </h3>
-                <p className="text"> Catch phrase : {bot.catchphrase} 🤖</p>
+                <h3 className="heading"> 🤖{bot.name}  </h3>
+                <p className="text"> 🔛 Catch phrase : {bot.catchphrase} </p>
                 <p className="text">🦾 Health : {bot.health}  </p>
                 <p className="text">💥 Damage : {bot.damage}  </p> 
                 <p className="text"> Class : {bot.bot_class} </p> 
