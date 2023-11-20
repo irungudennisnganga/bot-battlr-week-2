@@ -11,7 +11,7 @@ function App() {
   function handleDelete(bot){
     alert("Deleted")
    
-    fetch(`http://localhost:8001/bots/${bot.id}` , {
+    fetch(`https://bot-battlr-json.onrender.com/bots/${bot.id}` , {
         method :"DELETE",
         headers : {
             "content-Type" : "application/json"
@@ -21,7 +21,7 @@ function App() {
  }
 
 useEffect( () => {
-  fetch(`http://localhost:8001/bots`)
+  fetch(`https://bot-battlr-json.onrender.com/bots`)
     .then(r => r.json())
     .then(bots => setData(bots))
 
