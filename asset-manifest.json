@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bot-battlr-week-2/static/css/main.f7b499e3.css",
+    "main.js": "/bot-battlr-week-2/static/js/main.1a46789d.js",
+    "index.html": "/bot-battlr-week-2/index.html",
+    "main.f7b499e3.css.map": "/bot-battlr-week-2/static/css/main.f7b499e3.css.map",
+    "main.1a46789d.js.map": "/bot-battlr-week-2/static/js/main.1a46789d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7b499e3.css",
+    "static/js/main.1a46789d.js"
+  ]
+}
